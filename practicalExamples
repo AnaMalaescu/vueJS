@@ -1,0 +1,9 @@
+The philosophy behind Vue.js is to provide the simplest possible API for creating real-time, 
+two-way data binding between the view (HTML) and the model (a JavaScript object).
+
+1. Navigation Menu
+The model, or in other words our app's data. 
+  In Vue.js this is simply a JavaScript object containing variables and their initial values.
+An HTML template, the correct terminology for which is view. 
+  Here we chose what to display, add event listeners, and handle different usages for the model.
+ViewModel - a Vue instance that binds the model and view together, enabling them to communicate with each other.
