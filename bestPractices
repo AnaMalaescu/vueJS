@@ -1,0 +1,22 @@
+<div id="demo">
+  <p v-class="green: validation.valid">{{message}}</p>
+  <input v-model="message">
+</div>
+
+new Vue({
+  el: '#demo',
+  data: {
+    message: '',
+    validation: {
+      valid: false
+    }
+  }
+})
+
+Vue’s data observation model favors deterministic data models. 
+It is mandatory that all data properties to be initialized in order to vue to be able to track them, 
+because vue observes data cheanges and
+recursively walking the data object 
+and converting existing properties into
+reacting setters and getters using Object.defineProperty.
+
