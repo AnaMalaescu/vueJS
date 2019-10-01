@@ -7,3 +7,28 @@ The model, or in other words our app's data.
 An HTML template, the correct terminology for which is view. 
   Here we chose what to display, add event listeners, and handle different usages for the model.
 ViewModel - a Vue instance that binds the model and view together, enabling them to communicate with each other.
+
+2. Inline Editor
+If we want to give the users the ability to set any data, 
+we can do two-way binding and link together an input field with a model property.
+
+3. Order Form
+Since our services are stored in an array, we can take advantage of the v-for directive 
+to loop through all of the entries and display them. 
+If a new element is added to the array or any of the old ones is changed, 
+Vue.js will automatically update and show the new data.
+
+4. Instant Search
+The app will also have a text search field allowing us to filter which articles are displayed. 
+All of the articles will be held in an articles array, 
+and those articles that match the search query will be in a computed property called filteredArticles.
+
+5. Switchable Grid
+Just like in the previous app we will be showing a list of articles from tutorialzine.com stored in an array.
+
+The following links will be of great help to you:
+
+ * An official, detailed comparison with other frameworks - https://vuejs.org/v2/guide/comparison.html
+ * TodoMVC - a website where the same app is recreated with many different frameworks ( http://todomvc.com/ )
+
+
